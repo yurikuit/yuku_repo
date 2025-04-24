@@ -22,6 +22,11 @@
 # https://www.baeldung.com/ops/git-remove-file-without-deleting-it
 # git rm --cached file.txt
 
+if [[ -f "./repo.sh" ]]; then
+    echo "Found repo.sh, running it..."
+    bash ./repo.sh
+fi
+
 # Below command will backup everything inside the project folder
 git add --all .
 
